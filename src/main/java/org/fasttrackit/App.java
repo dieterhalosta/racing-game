@@ -8,13 +8,39 @@ public class App
 {
     public static void main( String[] args )
     {
+        System.out.println("----------------------------------");
         System.out.println( "Welcome to the racing game!" );
+        System.out.println("----------------------------------");
 
         Car carReference = new Car();
         carReference.name = "Audi";
         carReference.color = "red";
         carReference.maxSpeed = 260;
         carReference.mileage = 6.2;
+
+  //     carReference.engine = new Engine();
+  //     carReference.engine.manufacturer = "VW";
+  //     carReference.engine.capacity = 2000;
+
+        Engine engine1 = new Engine();
+        engine1.manufacturer = "VW";
+        engine1.capacity = 2000;
+
+        carReference.engine = engine1;
+
+        // One object with two references
+
+        System.out.println("Engine details:");
+        System.out.println(engine1.capacity);
+        System.out.println(carReference.engine.capacity);
+        System.out.println("------------------------------");
+
+        engine1.capacity = 2100;
+        System.out.println("Updated engine details:");
+        System.out.println(engine1.capacity);
+        System.out.println(carReference.engine.capacity);
+        System.out.println("-------------------------------");
+
 
         // concatenation
         System.out.println("Properties of " + carReference.name + ":");
