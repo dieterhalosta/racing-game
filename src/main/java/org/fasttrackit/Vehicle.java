@@ -15,6 +15,23 @@ public class Vehicle {
     // Method signature
     public double accelerate(double speed, double durationInHours) {
         // Method body
+
+        if (fuelLevel <= 0) {
+            System.out.println("No enough fuel.");
+            return 0;
+        }
+
+        if (speed > maxSpeed) {
+            System.out.println("Max Speed exected!");
+            return 0;
+        } else if (speed == maxSpeed) {
+            System.out.println("Be careful! Max speed reached");
+        } else {
+            System.out.println("Valid speed entered.");
+        }
+
+        // TODO: use more fuel if speed > 120
+
         System.out.println(name + " is accelerating with " + speed + " km/h for" + durationInHours + " h");
 
         // local variables - variable declarate in interiorul unei metode si este doar pentru metoda respectiva
