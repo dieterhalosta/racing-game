@@ -65,6 +65,11 @@ public class App
         System.out.println("Properties of " + car2.name + ":");
         System.out.println("Color: " + car2.color);
         System.out.println("Damage: " + car2.damaged);
+
+        // Restul unei impartiri (modulo)
+       // System.out.println(4 % 2);
+       // System.out.println(4 % 2 == 0); // printeaza true sau false depinde de caz
+        // System.out.println(4 % 3);
     }
 
 }
