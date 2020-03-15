@@ -22,7 +22,7 @@ public class Vehicle {
         }
 
         if (speed > maxSpeed) {
-            System.out.println("Max Speed exected!");
+            System.out.println("Max Speed exceeded!");
             return 0;
         } else if (speed == maxSpeed) {
             System.out.println("Be careful! Max speed reached");
@@ -31,6 +31,10 @@ public class Vehicle {
         }
 
         // TODO: use more fuel if speed > 120
+
+        if ( speed > 120 ) {
+            mileage++;
+        }
 
         System.out.println(name + " is accelerating with " + speed + " km/h for" + durationInHours + " h");
 
@@ -51,8 +55,8 @@ public class Vehicle {
         return traveledDistance;
     };
 
-    public void decelerate() {
+public void decelerate() {
         // TODO: implement this
         System.out.println("This is just a test method!");
-    }
-}
+        }
+        }
