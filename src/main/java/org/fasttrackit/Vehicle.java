@@ -6,14 +6,14 @@ public class Vehicle {
 
 
     // instance variables
-    int racingNumber;
-    String name;
-    int maxSpeed;
-    double mileage;
-    String color;
-    double fuelLevel;
-    double totalDistance;
-    boolean damaged;
+    private int racingNumber;
+    private String name;
+    private int maxSpeed;
+    private double mileage;
+    private String color;
+    private double fuelLevel;
+    private double totalDistance;
+    private boolean damaged;
 
     public Vehicle() {
         totalVehicleCount++;
@@ -65,4 +65,69 @@ public void decelerate() {
         // TODO: implement this
         System.out.println("This is just a test method!");
         }
-        }
+
+    public int getRacingNumber() {
+        return racingNumber;
+    }
+
+    public void setRacingNumber(int racingNumber) {
+        this.racingNumber = racingNumber;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name.trim();
+    }
+
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public double getMileage() {
+        return mileage;
+    }
+
+    public void setMileage(double mileage) {
+        this.mileage = mileage;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public double getFuelLevel() {
+        return fuelLevel;
+    }
+
+    public void setFuelLevel(double fuelLevel) {
+        this.fuelLevel = fuelLevel;
+    }
+
+    public double getTotalDistance() {
+        return totalDistance;
+    }
+
+    public void setTotalDistance(double totalDistance) {
+        this.totalDistance = totalDistance;
+    }
+
+    public boolean isDamaged() {
+        return damaged;
+    }
+
+    public void setDamaged(boolean damaged) {
+        this.damaged = damaged;
+    }
+
+}

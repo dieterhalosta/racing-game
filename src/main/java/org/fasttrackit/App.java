@@ -36,35 +36,32 @@ public class App
 //        int enteredNumber = scanner2.nextInt();
 //        System.out.println("Entered number: " + enteredNumber);
 //
-//        System.out.println("----------------------------------");
-//        System.out.println( "Welcome to the racing game!" );
-//        System.out.println("----------------------------------");
+        System.out.println("----------------------------------");
+        System.out.println( "Welcome to the racing game!" );
+        System.out.println("----------------------------------");
 //
-//        Engine engine1 = new Engine();
-//        engine1.manufacturer = "VW";
-//        engine1.capacity = 2000;
-//
-//        Car carReference = new Car(engine1);
-//        carReference.name = vehicleName;
-//        carReference.color = "red";
-//        carReference.maxSpeed = 260;
-//        carReference.mileage = 6.2;
-//        carReference.fuelLevel = 100;
-//        carReference.damaged = true;
+        Engine engine1 = new Engine();
+        engine1.manufacturer = "VW";
+        engine1.capacity = 2000;
 
-  //     carReference.engine = new Engine();
-  //     carReference.engine.manufacturer = "VW";
-  //     carReference.engine.capacity = 2000;
+        Car carReference = new Car(engine1);
+        carReference.setName("Audi");
+        carReference.setColor("red");
+        carReference.setMaxSpeed(260);
+        carReference.setMileage(6.2);
+        carReference.setFuelLevel(100);
+        carReference.setDamaged(true);
 
 
-//
-//
-//       double currentDistance = carReference.accelerate(60, 1);
-//
-//       System.out.println("Current distance: " + currentDistance);
-//
-//       Mechanic mechanic = new Mechanic();
-//       mechanic.repair(carReference);
+        System.out.println("Name: " + carReference.getName());
+
+
+       double currentDistance = carReference.accelerate(60, 1);
+
+       System.out.println("Current distance: " + currentDistance);
+
+       Mechanic mechanic = new Mechanic();
+       mechanic.repair(carReference);
 //
 //        System.out.println("Is car damaged? " + carReference.damaged);
 //
