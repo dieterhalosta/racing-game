@@ -12,7 +12,7 @@ public class Game {
     private String getVehicleNameFromUser() {
         System.out.println("Please enter vehicle name:");
         Scanner scanner = new Scanner(System.in);
-        return scanner.nextLine()
+        return scanner.nextLine();
     }
 
     private int getPlayerCountFromUSer() {
