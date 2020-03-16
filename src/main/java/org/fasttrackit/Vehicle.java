@@ -30,10 +30,9 @@ public class Vehicle {
             System.out.println("Valid speed entered.");
         }
 
-        // TODO: use more fuel if speed > 120
-
+        double mileageMultiplier = 1;
         if ( speed > 120 ) {
-            mileage++;
+            mileageMultiplier = speed / 100;
         }
 
         System.out.println(name + " is accelerating with " + speed + " km/h for" + durationInHours + " h");
@@ -48,6 +47,7 @@ public class Vehicle {
 
 
         double usedFuel = traveledDistance * mileage / 100;
+        usedFuel *= mileageMultiplier;
 
         fuelLevel -= usedFuel; // same as fuelLevel = fuelLevel - usedFuel
         System.out.println("Remaining fuel: " + fuelLevel);
