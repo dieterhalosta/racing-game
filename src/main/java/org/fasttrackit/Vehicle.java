@@ -18,6 +18,13 @@ public class Vehicle {
     public Vehicle() {
         totalVehicleCount++;
     }
+
+
+    // Method overloading
+    public double accelerate(double speed) {
+        return accelerate(speed, 1);
+    }
+
     // Method signature
     public double accelerate(double speed, double durationInHours) {
         // Method body
