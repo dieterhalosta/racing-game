@@ -1,6 +1,10 @@
 package org.fasttrackit;
 
 public class Vehicle {
+    // static variables sau class variable
+    static int totalVehicleCount;
+
+
     // instance variables
     int racingNumber;
     String name;
@@ -11,7 +15,9 @@ public class Vehicle {
     double totalDistance;
     boolean damaged;
 
-
+    public Vehicle() {
+        totalVehicleCount++;
+    }
     // Method signature
     public double accelerate(double speed, double durationInHours) {
         // Method body
