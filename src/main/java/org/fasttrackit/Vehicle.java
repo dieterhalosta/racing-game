@@ -73,6 +73,12 @@ public void decelerate() {
         System.out.println("This is just a test method!");
         }
 
+        //co-variant return type - posibila intrebare la examenul final - atunci cand suprascriem o metoda, putem schimba tipul de returnare doar daca returneaza precum in clasa ce o mosteneste
+        //TODO: look at recording for exact explanation.
+    protected Vehicle clone() {
+        return new Vehicle();
+    }
+
     public int getRacingNumber() {
         return racingNumber;
     }
@@ -139,5 +145,19 @@ public void decelerate() {
     // Read only Property
     public static int getTotalVehicleCount() {
         return totalVehicleCount;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "racingNumber=" + racingNumber +
+                ", name='" + name + '\'' +
+                ", maxSpeed=" + maxSpeed +
+                ", mileage=" + mileage +
+                ", color='" + color + '\'' +
+                ", fuelLevel=" + fuelLevel +
+                ", totalDistance=" + totalDistance +
+                ", damaged=" + damaged +
+                '}';
     }
 }

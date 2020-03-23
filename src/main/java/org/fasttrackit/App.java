@@ -11,9 +11,20 @@ public class App
 {
     public static void main( String[] args )
     {
+        System.out.println("----------------------------------");
+        System.out.println( "Welcome to the racing game!" );
+        System.out.println("----------------------------------");
 
 //        Game game = new Game();
 //        game.start();
+
+        CheatingVehicle cheater = new CheatingVehicle();
+        cheater.setName("Cheater");
+
+        cheater.accelerate(60, 1);
+        System.out.println("Total distance: " + cheater.getTotalDistance());
+
+
 
         Vehicle vehicle1 = new Vehicle();
         //vehicle1.totalVehicleCount = 1;
@@ -35,11 +46,7 @@ public class App
 //        Scanner scanner2 = new Scanner(System.in);
 //        int enteredNumber = scanner2.nextInt();
 //        System.out.println("Entered number: " + enteredNumber);
-//
-        System.out.println("----------------------------------");
-        System.out.println( "Welcome to the racing game!" );
-        System.out.println("----------------------------------");
-//
+
         Engine engine1 = new Engine();
         engine1.manufacturer = "VW";
         engine1.capacity = 2000;
@@ -52,6 +59,7 @@ public class App
         carReference.setFuelLevel(100);
         carReference.setDamaged(true);
 
+        System.out.println(carReference);
 
         System.out.println("Name: " + carReference.getName());
 
