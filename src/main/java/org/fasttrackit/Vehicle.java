@@ -73,7 +73,7 @@ public void decelerate() {
         System.out.println("This is just a test method!");
         }
 
-        //co-variant return type - posibila intrebare la examenul final - atunci cand suprascriem o metoda, putem schimba tipul de returnare doar daca returneaza precum in clasa ce o mosteneste
+        //co-variant return type - posibila intrebare la examenul final - atunci cand suprascriem o metoda, putem schimba tipul de returnare doar daca returneaza precum in clasa ce o mosteneste. Trebuie sa respect ce se returneaza...de tipul IS A.
         //TODO: look at recording for exact explanation.
     protected Vehicle clone() {
         return new Vehicle();
